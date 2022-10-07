@@ -1,29 +1,29 @@
 // Dhairya Brahmbhatt (ID: 301288609)
 
 public class Car {
-    String manufacturer;
+    String man;
     int make;
     String model;
-    static int VI_NUMBER = 1001;
+    static int VI_NUMBER = 1005;
     int VIN;
     double basePrice;
     CarType type;
 
     // constructor
-    public Car(String manufacturer, int make, String model, double basePrice, CarType type) {
-        this.manufacturer = manufacturer;
+    public Car(String man, int make, String model, double basePrice, CarType type) {
+        this.man = man;
         this.make = make;
         this.model = model;
         this.basePrice = basePrice;
         this.type = type;
-        VI_NUMBER += 100;
+        VI_NUMBER += 2000;
         this.VIN = VI_NUMBER;
         this.VIN = this.VIN + 10;
     }
 
     // getters
-    public String getManufacturer() {
-        return this.manufacturer;
+    public String getMan() {
+        return this.man;
     }
 
     public int getMake() {
@@ -53,7 +53,7 @@ public class Car {
     // toString
     public String toString()
     {
-    return "\n\nCar Details: \n Manufacturer: "+getManufacturer()+"\nMake:"+getMake()+"\nModel:"+getModel()+"\nVIN:"+getVIN()
+    return "\n\nCar Details: \n Manufacturer: "+getMan()+"\nMake:"+getMake()+"\nModel:"+getModel()+"\nVIN:"+getVIN()
     +"\nVI_NUMBER:"+getVI_NUMBER()+"\nBase Price: "+getPrice()+"\nCar Type: " +getType();
     }
 }

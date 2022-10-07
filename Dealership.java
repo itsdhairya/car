@@ -27,7 +27,7 @@ public class Dealership {
         for (int i = 0; i < carList.size(); i++)
 
             // Printing and display the elements in ArrayList
-            if (carList.get(i).getManufacturer().equalsIgnoreCase(manufacturer)) {
+            if (carList.get(i).getMan().equalsIgnoreCase(manufacturer)) {
                 System.out.print(carList.get(i));
             }
 
@@ -38,7 +38,7 @@ public class Dealership {
         for (int i = 0; i < carList.size(); i++)
 
             // Printing and display the elements in ArrayList
-            if (carList.get(i).getManufacturer().equalsIgnoreCase(manufacturer) && carList.get(i).getMake() == make) {
+            if (carList.get(i).getMan().equalsIgnoreCase(manufacturer) && carList.get(i).getMake() == make) {
                 System.out.print(carList.get(i));
             }
 
@@ -49,14 +49,14 @@ public class Dealership {
         for (int i = 0; i < carList.size(); i++)
 
             // Printing and display the elements in ArrayList
-            if (carList.get(i).getManufacturer().equalsIgnoreCase(manufacturer) &&
+            if (carList.get(i).getMan().equalsIgnoreCase(manufacturer) &&
                     carList.get(i).getMake() == make && carList.get(i).getPrice() <= basePrice) {
                 System.out.print(carList.get(i));
             }
 
     }
 
-    // getters
+    // GETTER S
     public String getID() {
         return this.id;
     }
@@ -74,4 +74,3 @@ public class Dealership {
         return "\n\nDealerID: " + getID() + "\nDealerName:" + getName() + "\nDealerAddress:" + getAddress();
     }
 }
-// end Class Dealership
